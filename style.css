@@ -1,0 +1,256 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    background: linear-gradient(135deg, #8eaca8, #6d8c88);
+    color: white;
+    text-align: center;
+    padding: 100px 20px 140px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn,
+.btn-small {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn {
+    background: white;
+    color: #6d8c88;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.btn-small {
+    margin-top: 18px;
+    padding: 10px 18px;
+    background: #8eaca8;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.btn-small:hover {
+    background: #6d8c88;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    max-width: 1100px;
+    margin: -70px auto 60px;
+    padding: 0 20px;
+}
+
+/* =========================
+   CARD STYLING
+========================= */
+
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #2f4f4f;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.section-title {
+    margin: 10px 0 25px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* =========================
+   DOCUMENTATION CARD
+========================= */
+
+.documentation-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-left: 6px solid #8eaca8;
+    background: #fcfcfc;
+}
+
+.documentation-card:hover {
+    background: #f8f8f8;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   PROJECT GRID
+========================= */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* =========================
+   PROJECT CARDS
+========================= */
+
+.project-card {
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+}
+
+.project-card p {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   PROJECT IMAGES
+========================= */
+
+.project-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.03);
+}
+
+/* =========================
+   FINAL PROJECT SPECIAL
+========================= */
+
+.final-project {
+    border: 2px solid #8eaca8;
+    background: linear-gradient(to bottom right, #ffffff, #f6fbfb);
+}
+
+.final-project h3 {
+    color: #6d8c88;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 80px 20px 120px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .container {
+        margin-top: -50px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .project-img {
+        height: 180px;
+    }
+}
